@@ -1,4 +1,4 @@
-package com.example.servlets;
+package com.matrix.servlets;
 
 import com.google.appengine.tools.development.testing.LocalDatastoreServiceTestConfig;
 import com.google.appengine.tools.development.testing.LocalServiceTestHelper;
@@ -18,19 +18,19 @@ import static org.mockito.Mockito.when;
 
 import static org.junit.Assert.*;
 
-public class PrimeTestServletTest {
+public class Rotate {
 
     private final LocalServiceTestHelper mHelper =
             new LocalServiceTestHelper(new LocalDatastoreServiceTestConfig())
                     .setEnvIsLoggedIn(true)
                     .setEnvAuthDomain("localhost")
                     .setEnvEmail("test@localhost");
-    private PrimeTestServlet mSubject;
+    private RotateServlet mSubject;
 
     @Before
     public void setUp() {
         mHelper.setUp();
-        mSubject = new PrimeTestServlet();
+        mSubject = new RotateServlet();
     }
 
     @After

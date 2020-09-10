@@ -1,10 +1,10 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
     <servlet>
-        <servlet-name>PrimeServlet</servlet-name>
-        <servlet-class>com.example.servlets.PrimeTestServlet</servlet-class>
+        <servlet-name>Rotate</servlet-name>
+        <servlet-class>com.matrix.servlets.RotateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>PrimeServlet</servlet-name>
-        <url-pattern>/is_prime</url-pattern>
+        <servlet-name>Rotate</servlet-name>
+        <url-pattern>/rotate</url-pattern>
     </servlet-mapping>
 </web-app>
