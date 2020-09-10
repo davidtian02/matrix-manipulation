@@ -1,0 +1,25 @@
+appengine-generated/
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# IntelliJ IDEA
+.Idea
+*.iml
+.idea/
+
+# Target folders
+target/
+build/
+out/
+
+# auto-generated tag files
+tags
+
+## Secrets ##
+client-secret.json
+
+.gradle
+/build/
