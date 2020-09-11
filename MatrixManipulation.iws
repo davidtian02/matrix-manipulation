@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f744e510-d47d-4213-88dd-85e59cf4d332" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/MatrixManipulation.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixManipulation.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatrixManipulation.iws" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixManipulation.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/servlets/PrimeTestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/servlets/PrimeTestServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matrix/servlets/Rotate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/utils/MathUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matrix/servlets/Rotate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matrix/servlets/RotateServletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -62,47 +59,61 @@
     <ui_properties converted="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RotateServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatrixUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatrixUtilsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="RotateServlet.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MatrixUtils.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="RotateServletTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/servlets/RotateServletTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="341">
+                  <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MatrixUtilsTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -114,6 +125,7 @@
       <find>deploy</find>
       <find>prime</find>
       <find>apache</find>
+      <find>For input string:</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -135,6 +147,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/matrix/utils/MathUtils.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/matrix/servlets/Rotate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/matrix/servlets/RotateServletTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java" />
       </list>
@@ -303,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method>
@@ -331,6 +345,33 @@
       <option name="PACKAGE_NAME" value="com.matrix.utils" />
       <option name="MAIN_CLASS_NAME" value="com.matrix.utils.MatrixUtilsTest" />
       <option name="METHOD_NAME" value="isPrime_withPrimeNumbers_shouldReturnTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixManipulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.matrix.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.matrix.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.matrix.utils.MatrixUtilsTest" />
+      <option name="METHOD_NAME" value="rotate_withStandardMatrix_shouldRotateClockwise" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -379,8 +420,13 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MatrixUtilsTest.isPrime_withPrimeNumbers_shouldReturnTrue" />
+      <item itemvalue="JUnit.MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" />
         <item itemvalue="JUnit.MatrixUtilsTest.isPrime_withPrimeNumbers_shouldReturnTrue" />
       </list>
     </recent_temporary>
@@ -399,11 +445,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MathUtilsTest_isPrime_withPrimeNumbers_shouldReturnTrue - 2020.09.10 at 18h 01m 34s.xml">
-      <configuration name="MathUtilsTest.isPrime_withPrimeNumbers_shouldReturnTrue" configurationId="JUnit" />
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 18h 48m 33s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathUtilsTest_isPrime_withPrimeNumbers_shouldReturnTrue - 2020.09.10 at 18h 01m 47s.xml">
-      <configuration name="MathUtilsTest.isPrime_withPrimeNumbers_shouldReturnTrue" configurationId="JUnit" />
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 18h 49m 15s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 18h 50m 02s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 18h 50m 15s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 19h 02m 00s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 19h 02m 42s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 19h 03m 45s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 19h 05m 30s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 21h 07m 42s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MatrixUtilsTest_rotate_withStandardMatrix_shouldRotateClockwise - 2020.09.10 at 21h 08m 47s.xml">
+      <configuration name="MatrixUtilsTest.rotate_withStandardMatrix_shouldRotateClockwise" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -412,7 +482,7 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.3292978" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -420,10 +490,10 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.20258273" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3292978" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3292978" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24988323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24988323" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292978" />
       <window_info anchor="right" id="Google Cloud Storage" />
       <window_info anchor="right" id="Gradle" />
@@ -431,7 +501,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39951575" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Google Cloud Storage" order="3" />
@@ -468,6 +538,80 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>e.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getCause()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getMessage()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getLocalizedMessage()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arrs.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Matcher) result).group(5)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Matcher) result).group(4)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MatrixManipulation.iws">
@@ -539,31 +683,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="268">
+          <caret line="706" column="12" selection-start-line="706" selection-start-column="12" selection-end-line="706" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/servlets/RotateServletTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/matrix/utils/MatrixUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/utils/MatrixUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="422">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/matrix/servlets/RotateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
