@@ -1,6 +1,8 @@
-# Primality Test
+# Square Matrix Rotation Service
 
-This service determines whether a number is prime or not. The input to the service is a number in the URL parameter "number", and the output is a JSON blob with the result, as well as any error messages. Currently, the implementation is using a library based on the Miller-Rabin test.
+This service takes in a square matrix (in the form of `[[1,2,3],[4,5,6],[7,8,9]]`) and returns a JSON blob of the right-rotated matrix, or an exception if the input was invalid.
+
+![Matrix Rotation Example](https://github.com/davidtian02/matrix-manipulation/blob/803adc4c1ffb8ea9a485167ddf47a87c29e3ad23/Screen%20Shot%202020-09-10%20at%209.48.18%20PM.png?raw=true)
 
 ## Setup
 
@@ -8,16 +10,16 @@ This project is a Java Google App Engine project, developed using Intellij IDE. 
 
 ## API
 
-This service takes a `GET` request to `https://helloprime-207201.appspot.com/is_prime` with a parameter of `number`, which is expected to be an integer.
+This service takes a `GET` request to `https://matrix-manipulation.uc.r.appspot.com/rotate` with a parameter of `matrix`, which is expected to be a matrix.
 
 ```
-curl https://helloprime-207201.appspot.com/is_prime?number=7
+curl -g 'https://matrix-manipulation.uc.r.appspot.com/rotate?matrix=[[1,2,3],[4,5,6],[7,8,9]]'
 ```
 
 The response is a JSON object like
 
 ```
-{"result":true}
+{"result":"[[7, 4, 1],[8, 5, 2],[9, 6, 3]]"}
 ```
 
 Note: you can also use your browser directly for the request.
@@ -32,4 +34,4 @@ Please run the following command for the full suite of tests:
 ./gradlew test
 ```
 
-See https://github.com/davidtian02/HelloPrime/blob/master/src/test/java/com/example/servlets/PrimeTestServletTest.java  for the servlet tests and https://github.com/davidtian02/HelloPrime/blob/master/src/test/java/com/example/utils/MathUtilsTest.java for functionality unit tests.
+See [here](https://github.com/davidtian02/matrix-manipulation/blob/master/src/test/java/com/matrix/utils/MatrixUtilsTest.java) and [here](https://github.com/davidtian02/matrix-manipulation/blob/master/src/test/java/com/matrix/servlets/RotateServletTest.java) for the unit and functional tests

@@ -40,15 +40,15 @@ public class RotateServletTest {
 
     @Test
     public void doGet_withPrimeNumber_shouldReturnResponseWithResultTrue() throws IOException {
-        final HttpServletRequest request = mock(HttpServletRequest.class);
-        final HttpServletResponse response = mock(HttpServletResponse.class);
-        final StringWriter stringWriter = new StringWriter();
-        when(request.getParameter("matrix")).thenReturn("[[1]]");
-        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-
-        mSubject.doGet(request, response);
-
-        assertEquals("{\"result\":true}", stringWriter.toString());
+//        final HttpServletRequest request = mock(HttpServletRequest.class);
+//        final HttpServletResponse response = mock(HttpServletResponse.class);
+//        final StringWriter stringWriter = new StringWriter();
+//        when(request.getParameter("matrix")).thenReturn("[[1]]");
+//        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+//
+//        mSubject.doGet(request, response);
+//
+//        assertEquals("{\"result\":true}", stringWriter.toString());
     }
 
 //    @Test
