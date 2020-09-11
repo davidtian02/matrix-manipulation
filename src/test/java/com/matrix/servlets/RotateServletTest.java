@@ -39,54 +39,67 @@ public class RotateServletTest {
     }
 
     @Test
-    public void doGet_withPrimeNumber_shouldReturnResponseWithResultTrue() throws IOException {
-//        final HttpServletRequest request = mock(HttpServletRequest.class);
-//        final HttpServletResponse response = mock(HttpServletResponse.class);
-//        final StringWriter stringWriter = new StringWriter();
-//        when(request.getParameter("matrix")).thenReturn("[[1]]");
-//        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-//
-//        mSubject.doGet(request, response);
-//
-//        assertEquals("{\"result\":true}", stringWriter.toString());
+    public void doGet_withInputMatrix_shouldReturnResponseWithRotatedMatrixResponse() throws IOException {
+        final HttpServletRequest request = mock(HttpServletRequest.class);
+        final HttpServletResponse response = mock(HttpServletResponse.class);
+        final StringWriter stringWriter = new StringWriter();
+        when(request.getParameter("matrix")).thenReturn("[[1,2,3],[4,5,6],[7,8,9]]");
+        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+
+        mSubject.doGet(request, response);
+
+        assertEquals("{\"result\":\"[[7, 4, 1],[8, 5, 2],[9, 6, 3]]\"}", stringWriter.toString());
     }
 
-//    @Test
-//    public void doGet_withCompositeNumber_shouldReturnResponseWithResultFalse() throws IOException {
-//        final HttpServletRequest request = mock(HttpServletRequest.class);
-//        final HttpServletResponse response = mock(HttpServletResponse.class);
-//        final StringWriter stringWriter = new StringWriter();
-//        when(request.getParameter("number")).thenReturn("10");
-//        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-//
-//        mSubject.doGet(request, response);
-//
-//        assertEquals("{\"result\":false}", stringWriter.toString());
-//    }
-//
-//    @Test
-//    public void doGet_withMissingParam_shouldReturnFalseWithErrorMessage() throws IOException {
-//        final HttpServletRequest request = mock(HttpServletRequest.class);
-//        final HttpServletResponse response = mock(HttpServletResponse.class);
-//        final StringWriter stringWriter = new StringWriter();
-//        when(request.getParameter("number")).thenReturn(null);
-//        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-//
-//        mSubject.doGet(request, response);
-//
-//        assertEquals("{\"result\":false,\"error_message\":\"Invalid input, please set parameter to be valid integer.\"}", stringWriter.toString());
-//    }
-//
-//    @Test
-//    public void doGet_withInvalidParamType_shouldReturnFalseWithErrorMessage() throws IOException {
-//        final HttpServletRequest request = mock(HttpServletRequest.class);
-//        final HttpServletResponse response = mock(HttpServletResponse.class);
-//        final StringWriter stringWriter = new StringWriter();
-//        when(request.getParameter("number")).thenReturn("STRING");
-//        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
-//
-//        mSubject.doGet(request, response);
-//
-//        assertEquals("{\"result\":false,\"error_message\":\"Invalid input, please set parameter to be valid integer.\"}", stringWriter.toString());
-//    }
+    @Test
+    public void doGet_withEmptyMatrix_shouldReturnHelpfulErrorMessage() throws IOException {
+        final HttpServletRequest request = mock(HttpServletRequest.class);
+        final HttpServletResponse response = mock(HttpServletResponse.class);
+        final StringWriter stringWriter = new StringWriter();
+        when(request.getParameter("matrix")).thenReturn("[[]]");
+        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+
+        mSubject.doGet(request, response);
+
+        assertEquals("{\"error_message\":\"java.lang.IllegalArgumentException: Please provide valid matrix with at least 1 point in matrix\"}", stringWriter.toString());
+    }
+
+    @Test
+    public void doGet_withInvalidChars_shouldReturnSpecificErrorMessage() throws IOException {
+        final HttpServletRequest request = mock(HttpServletRequest.class);
+        final HttpServletResponse response = mock(HttpServletResponse.class);
+        final StringWriter stringWriter = new StringWriter();
+        when(request.getParameter("matrix")).thenReturn("[asdfasefaxcddwf");
+        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+
+        mSubject.doGet(request, response);
+
+        assertTrue(stringWriter.toString().contains("{\"error_message\":\"java.lang.NumberFormatException: For input string:"));
+    }
+
+    @Test
+    public void doGet_withRectangleMatrix_shouldReturnHelpfulErrorMessage() throws IOException {
+        final HttpServletRequest request = mock(HttpServletRequest.class);
+        final HttpServletResponse response = mock(HttpServletResponse.class);
+        final StringWriter stringWriter = new StringWriter();
+        when(request.getParameter("matrix")).thenReturn("[[1],[4],[222]]");
+        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+
+        mSubject.doGet(request, response);
+
+        assertEquals("{\"error_message\":\"java.lang.IllegalArgumentException: Matrix is not a square. Please provide square matrix\"}", stringWriter.toString());
+    }
+
+    @Test
+    public void doGet_withoutParameter_shouldReturnHelpfulErrorMessage() throws IOException {
+        final HttpServletRequest request = mock(HttpServletRequest.class);
+        final HttpServletResponse response = mock(HttpServletResponse.class);
+        final StringWriter stringWriter = new StringWriter();
+        when(request.getParameter("matrix")).thenReturn(null);
+        when(response.getWriter()).thenReturn(new PrintWriter(stringWriter));
+
+        mSubject.doGet(request, response);
+
+        assertEquals("{\"error_message\":\"java.lang.IllegalArgumentException: Please provide non-null input\"}", stringWriter.toString());
+    }
 }
