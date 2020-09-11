@@ -6,6 +6,10 @@ import java.util.stream.Collectors;
 
 public class MatrixUtils {
     public static void rotate(int[][] matrix) {
+        if (matrix == null) {
+            throw new IllegalArgumentException("Please provide non-null input");
+        }
+
         for (int i=0; i<(matrix.length>>1); i++) {
             rotate(matrix, i, matrix.length-1-i);
         }
@@ -22,19 +26,14 @@ public class MatrixUtils {
         }
     }
 
-    public static String toString(int[][] matrix) {
-        StringBuilder result = new StringBuilder();
-        result.append("[");
-        List<String> arr = Arrays.stream(matrix).map(Arrays::toString).collect(Collectors.toList());
-        String content = String.join(",", arr);
-        result.append(content);
-        return result.append("]").toString();
-    }
-
     public static int[][] parseMatrix(String input) throws IllegalArgumentException {
+        if (input == null) {
+            throw new IllegalArgumentException("Please provide non-null input");
+        }
+
         String condensed = input.replaceAll("\\s+", "");
         if (condensed.length() < 5) {
-            throw new IllegalArgumentException("Please provide at least 1 point in matrix");
+            throw new IllegalArgumentException("Please provide valid matrix with at least 1 point in matrix");
         }
         String[] arrs = condensed.substring(2, condensed.length()-2).split("],\\[");
         int[][] matrix = new int[arrs.length][];
@@ -51,6 +50,23 @@ public class MatrixUtils {
     }
 
     public static boolean validateSquare(int[][] matrix) {
+        if (matrix == null) {
+            throw new IllegalArgumentException("Please provide non-null input");
+        }
+
         return Arrays.stream(matrix).filter(a -> a.length != matrix.length).toArray().length == 0;
+    }
+
+    public static String toString(int[][] matrix) {
+        if (matrix == null) {
+            throw new IllegalArgumentException("Please provide non-null input");
+        }
+
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        List<String> arr = Arrays.stream(matrix).map(Arrays::toString).collect(Collectors.toList());
+        String content = String.join(",", arr);
+        result.append(content);
+        return result.append("]").toString();
     }
 }
